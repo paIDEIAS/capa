@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <link rel="shortcut icon" href="http://findicons.com/files/icons/1799/bathroom/16/duck.png" type="image/ico" />
 <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -27,8 +27,9 @@
 #pa-home tit { font: italic bold 50px Playfair Display; text-align: center; display: block;  line-height: 100%; }
 #pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
 .mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 30px 0px; color: #e85d5d; }
+
     .sp-slideshow { position: relative; margin: 0px auto; width: 1200px; height: 600px; }
-    .sp-content { background: #fff; position: relative; width: 100%;height: 100%;overflow: hidden;}
+    .sp-content { background: #fff; position: relative; width: 100%;height: 100%; overflow: hidden; }
     
     .sp-parallax-bg {background: #f3f9ff; -webkit-background-size: cover;-moz-background-size: cover;background-size: cover;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
     
@@ -44,6 +45,9 @@
     .sp-selector-3, .button-label-3 {margin-left: 0px;}
     .sp-selector-4, .button-label-4 {margin-left: 18px;}
     .sp-selector-5, .button-label-5 {margin-left: 36px;}
+    .sp-selector-6, .button-label-6 {margin-left: 54px;}
+    .sp-selector-7, .button-label-7 {margin-left: 72px;}
+    .sp-selector-8, .button-label-8 {margin-left: 90px;}
     
     .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
     transition: opacity linear 0.3s;}
@@ -52,11 +56,17 @@
     .sp-selector-1:checked ~ .sp-arrow.sp-a2,
     .sp-selector-2:checked ~ .sp-arrow.sp-a3,
     .sp-selector-3:checked ~ .sp-arrow.sp-a4,
-    .sp-selector-4:checked ~ .sp-arrow.sp-a5 {right: 15px;display: block;background-position: top right;}
+    .sp-selector-4:checked ~ .sp-arrow.sp-a5, 
+    .sp-selector-5:checked ~ .sp-arrow.sp-a6,
+    .sp-selector-6:checked ~ .sp-arrow.sp-a7,
+    .sp-selector-7:checked ~ .sp-arrow.sp-a8{right: 15px;display: block;background-position: top right;}
     .sp-selector-2:checked ~ .sp-arrow.sp-a1,
     .sp-selector-3:checked ~ .sp-arrow.sp-a2,
     .sp-selector-4:checked ~ .sp-arrow.sp-a3,
-    .sp-selector-5:checked ~ .sp-arrow.sp-a4 {left: 15px;display: block;background-position: top left;}
+    .sp-selector-5:checked ~ .sp-arrow.sp-a4,
+    .sp-selector-6:checked ~ .sp-arrow.sp-a5, 
+    .sp-selector-7:checked ~ .sp-arrow.sp-a6,
+    .sp-selector-8:checked ~ .sp-arrow.sp-a7{left: 15px;display: block;background-position: top left;}
     
     
     .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
@@ -68,19 +78,25 @@
     input.sp-selector-3:checked ~ .sp-content {background-position: -200px 0;background-color: #737f72;} 
     input.sp-selector-4:checked ~ .sp-content {background-position: -300px 0;background-color: #79727f;} 
     input.sp-selector-5:checked ~ .sp-content {background-position: -400px 0;background-color: #7d7f72;} 
+    input.sp-selector-6:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
+    input.sp-selector-7:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
+    input.sp-selector-8:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
     
     input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-6:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-7:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-8:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     
-    .sp-slider { position: relative;left: 0; width: 500%;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    .sp-slider { position: relative; left: 0; width: 9600px;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
     
     .sp-slider > li {
     height:100%;
     padding:0 60px;
-    width: 20%;
+    width: 1200px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -99,17 +115,23 @@
     
     
     input.sp-selector-1:checked ~ .sp-content .sp-slider {left: 0;}
-    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -100%;}
-    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -200%;}
-    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -300%;}
-    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -400%;}
+    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -1200px;}
+    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -2400px;}
+    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -3600px;}
+    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -4800px;}
+    input.sp-selector-6:checked ~ .sp-content .sp-slider {left: -6000px;}
+    input.sp-selector-7:checked ~ .sp-content .sp-slider {left: -7200px;}
+    input.sp-selector-8:checked ~ .sp-content .sp-slider {left: -8400px;}
     
     
     input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
     input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
     input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
     input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
-    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){ opacity: 1; }
+    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5),
+    input.sp-selector-6:checked ~ .sp-content .sp-slider > li:nth-child(6),
+    input.sp-selector-7:checked ~ .sp-content .sp-slider > li:nth-child(7),
+    input.sp-selector-8:checked ~ .sp-content .sp-slider > li:nth-child(8){ opacity: 1; }
     
 </style>
 <center>
@@ -150,12 +172,33 @@
     
    <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
    <label for="button-3" class="button-label-3"></label>
+     
+   <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+   <label for="button-4" class="button-label-4"></label>
     
+   <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+   <label for="button-5" class="button-label-5"></label>
+    
+   <input id="button-6" type="radio" name="radio-set" class="sp-selector-6" />
+   <label for="button-6" class="button-label-6"></label>
+   
+   <input id="button-7" type="radio" name="radio-set" class="sp-selector-7" />
+   <label for="button-7" class="button-label-7"></label>
+   
+   <input id="button-8" type="radio" name="radio-set" class="sp-selector-8" />
+   <label for="button-8" class="button-label-8"></label>
+
+
     
    <label for="button-1" class="sp-arrow sp-a1"></label>
    <label for="button-2" class="sp-arrow sp-a2"></label>
    <label for="button-3" class="sp-arrow sp-a3"></label>
-
+   <label for="button-4" class="sp-arrow sp-a4"></label>
+   <label for="button-5" class="sp-arrow sp-a5"></label>
+   <label for="button-6" class="sp-arrow sp-a6"></label>
+   <label for="button-7" class="sp-arrow sp-a7"></label>
+   <label for="button-8" class="sp-arrow sp-a8"></label>
+      
     
    <div class="sp-content">
        <div class="sp-parallax-bg"></div>
@@ -181,6 +224,7 @@
 <li>
              
              
+             
              <div class="mat-capa" style="background: right #fff;">
   <div style="padding: 0px 20px 0px 60px; margin-top: -20px; width: 215px; float: left;">
 <p>As histórias em quadrinhos padeceram durante décadas a <span style="letter-spacing: -.3px;">indiferença das camadas intelectuais o da sociedade, apesar de</span> representarem a continuidade de uma longa tradição de manifestações iconográficas, cuja gênese pode ser encontrada nas pinturas das cavernas do homem pré-histórico e que se desenvolveram durante séculos em diversas formas de manifestações artísticas, como as colunas de Trajano, a Tapeçaria de Bayeux, o Livro dos Mortos etc. Embora constituindo uma linguagem própria – híbrida da linguagem escrita e da imagem desenhada -, os quadrinhos tiveram sua aceitação pelas elites pensantes dificultada por diversos fatores, mas principalmente por sua característica de linguagem direcionada para as massas. No entanto, os últimos anos parecem ter trazido novos e promissores ventos para as histórias em quadrinhos no que diz respeito à sua inserção no mundo das manifestações artísticas socialmente reconhecidas. Este artigo</p></div>
@@ -192,7 +236,8 @@
 <div style="padding-right: 60px; margin-top: -7px; width: 215px; float: right;">
 <l>e divulgação de bens culturais; além disso, pesou também na decisão o fato desta mesma instituição museológica ter abrigado, na segunda metade do século passado, uma das primeiras exposições de quadrinhos do mundo, demonstrando na ocasião uma postura de vanguarda em relação à postura então dominante no meio intelectual brasileiro e mundial.</l>
   <p style="margin-top: 0px;">De fato, com relação a esse fato, além de salienta-lo e solidarizar- se com a professora pela resposta infeliz por ela obtida, pode-se cogitar que os atuais responsáveis por essa importante instituição artística e cultural da cidade de São Paulo, além de desconhecerem a própria história do órgão que dirigem, fazem ainda parte de uma minoria de intelectuais que persiste vendo a arte como uma “essência metafísica reconhecida pelos seus méritos técnicos, mas, principalmente, pelo seu status filosófico” (MARTINS, 2006, p. 67), da mesma forma em que ignoram ou o<span style="letter-spacing: .1px;">fingem ignorar os avanços ocorridos</span></p>
-</div>
+</div></div>
+
              
              
              
@@ -200,6 +245,7 @@
              
            </li>
            <li>
+             
              
              
              <div class="mat-capa" style="background: right #fff url(http://i.imgur.com/t7SZz6m.png);">
@@ -210,25 +256,148 @@
 <p>No entanto, ainda que esses autores tenham representado, no ambiente norte-americano, o começo de um movimento de reconhecimento dos quadrinhos como manifestação artística, eles não se constituíram, absolutamente, em precursores desse tipo de valorização da linguagem gráfica seqüencial. Na realidade, o mérito nessa área cabe a diversos intelectuais europeus, mais ágeis em reconhecer o forte impacto social dos produtos quadrinísticos e sobre ele realizando estudos e exposições. Nesse sentido, também não se pode desmerecer a ação visionária de alguns admiradores do gênero no Brasil, que, já em 1951, ainda que sem obter o mesmo impacto no contexto intelectual brasileiro, realizaram a primeira exposição de histórias em quadrinhos em ambiente formalmente constituído como artefato cultural (MOYA, 2001). </p>
 <p>Por outro lado, é preciso reconhecer que a classificação de extratos ou páginas de histórias em quadrinhos como objetos museológicos é muito pouco em termos de  descrição ou categorização das possibilidades artísticas</p></div>
 
-<div style="padding: 220px 30px 0px 30px; width: 220px; float: left;">
+<div style="padding: 210px 30px 0px 30px; width: 220px; float: left;">
 
 <l>dos quadrinhos. Bebendo nas águas das mais variadas artes, como a ilustração, o teatro, a literatura, a caricatura e o cinema (BARBIERI, 1998), as histórias em quadrinhos constituem um gênero complexo, em que elementos narrativos de várias <span style="letter-spacing: -.1px;">manifestações artísticas ou linguagens são explorados</span>.</l>
 <p style="margin-top: 0px;">Esta característica híbrida da linguagem quadrinística, bem como o fascínio que ela tradicionalmente
-exerceu sobre grandes massas de <span style="letter-spacing:-.1px;">leitores, principalmente os mais jovens,</span>
+exerceu sobre grandes massas de leitores, principalmente os mais  <span style="letter-spacing:-.3px;">jovens, está talvez no centro de sua rejeição está </span>
 </p>
 </div>
-<div style="padding-right: 60px; margin-top: -10px; width: 215px; float: right;">
-está talvez no centro de sua rejeição pelas elites intelectuais. 
+<div style="padding-right: 60px; margin-top: -8px; width: 215px; float: right;">
+<l>talvez no centro de sua rejeição pelas elites intelectuais. 
 Embora compreendidas pelo universo da arte na era da reprodução mecânica, conforme visto por Benjamin (2006 [1969]), elas eram difíceis de
 classificar e contextualizar. No entanto, talvez em maior medida que a indústria cinematográfica, objeto de atenção do autor alemão, os quadrinhos
 levavam o aspecto de distração a seu extremo, dificultando sua compreensão por parte dos <span style="letter-spacing:-.1px;">críticos de Arte. Daí, a incompreensão,</span> o estranhamento. Isto também dificultou a inserção das histórias em quadrinhos no ambiente acadêmico, em que eles foram virtualmente ignorados durante boa parte do século, independentemente de seu impacto social.</p>
-  <p style="margin-top: 0px; letter-spacing:-.3px;">A atenção dispensada aos quadrinhos pelos intelectuais ocorreu em paralelo com a emergência de movimentos de produção de quadrinhos que buscavam sua independência das obras disponibilizadas pela indústria massificada </p>
-</div>
-             
+</l>  <p>A atenção dispensada aos quadrinhos pelos intelectuais ocorreu em paralelo com a emergência de <span style="letter-spacing:-.35px;">movimentos de produção de quadrinhos que buscavam sua independência das <span style="letter-spacing:.25px;">obras disponibilizadas pela indústria</span>
+
+  </span></p>
+</div></div>
+
              
              
              
            </li>
+                      <li>
+             
+             
+             
+             <div class="mat-capa" style="background: right #fff;">
+  <div style="padding: 0px 20px 0px 60px; margin-top: -8px; width: 215px; float: left;">
+
+<l> <span style="letter-spacing: -.6px;"> massificada
+  – genericamente denominada como quadrinhos mainstream - superiores</span> ao que era então disponibilizado pelas grandes editoras de quadrinhos.</l>
+<p STYLE="margin-top: 0px;">Nesse sentido, eles se aliavam, embora muitas vezes não explicitamente, à crítica à indústria cultural feita pelos ideólogos da Escola de Frankfurt, que viam os produtos dessa indústria como essencialmente os mesmos. Como defenderam Max Horkheimer e Theodor W. Adorno (2006 [1944], p. 43-44) em seu famoso texto sobre a indústria cultural. </p>
+  <p style="letter-spacing: -.2px;">Surgido na costa do Pacífico nos Estados Unidos, o movimento dos quadrinhos underground, também conhecidos como comix, bebeu mais especificamente na fonte dos movimentos hippies e da revolta estudantil, representando uma tomada de decisão pelo fortalecimento e autonomia da produção quadrinística e sua 
+  utilização como meio privilegiado para <span style="letter-spacing: .4px;">manifestação artística e social.</span></p>
+</div>
+
+<div style="padding-right: 20px; margin-top: -7px; width: 215px; float: left;">
+<l> Fazendo jus ao seu tempo, seus autores, em geral oriundos e atuantes <span style="letter-spacing: -.1px;">no ambiente universitário</span>, recusavam-se a fazer parte da máquina editorial massificada e massificante, bem como a seguir as normas estabelecidas pelas grandes editoras do país. Extremamente rígidas e reguladas, essas normas eram conseqü.ncia indesejada da ainda recente perseguição aos quadrinhos, ocorrida há apenas uma década e tinham sua expressão concreta no chamado Comics Code, pelo qual cada publicação em quadrinhos era analisada e recebia um selo de aprovação, atestando sua insipiência em relação aos valores socialmente aprovados (NYBERG, 1998).  </l>
+<p style="margin-top: 0px;">Os artistas do movimento underground propunham uma criação <span style="letter-spacing: -.1px;">quadrinística totalmente desvinculada</span> de editoras ou normas editoriais, com obras voltadas para a expressão de sentimentos, 
+ <span style="letter-spacing: -.4px;">para o desafio às tradições</span> <span style="letter-spacing: .4px;">e para a liberação de costumes, sem  </span></p></div>
+
+
+<div style="padding: 50px 30px; width: 200px; float: left;">
+<div class="mat-quote"><center> "Mesmo no âmbito da produção industrializada de quadrinhos era possível vislumbrar indicadores dessa busca por novos parâmetros criativos." </center></div></div>
+
+
+<div style="padding-right: 60px; margin-top: -7px; width: 215px; float: right;">
+<l><span style="letter-spacing: -.4px;">preocupações imediatas com o consumo ou motivações mercantilistas. À frente dessa verdadeira bandeira libertária estiveram</span> nomes posteriormente consagrados no universo dos quadrinhos, verdadeiros ícones em sua proposição como forma de manifestação artística capaz de suplantar as limitações da produção industrializada: Robert Crumb, Gilbert Shelton, Rick Griffin, S. Clay Wilson, Spain Rodriguez, entre outros (SKINN, 2004). </l>
+<p style="margin-top: 0px;">Embora limitado espacial e temporalmente, pois o movimento dos quadrinhos underground teve seu apogeu basicamente entre final da década de 1960 e meados de 1970, a influência tanto de obras como de autores ampliou-se bem além das fronteiras do estado da Califórnia e atingiu os países europeus e latino-americanos, podendo-se afirmar que ajudaram na formulação de um estilo de produção de quadrinhos. 
+  Na <span style="letter-spacing: -.2px;">Europa, eles foram fontes de inspiração</span> 
+</p>
+</div>
+</div>
+
+             
+             
+             
+           </li>
+                      <li>
+             
+             
+             
+             <div class="mat-capa" style="background: right #fff url(http://i.imgur.com/FiOZFly.png);">
+  <div style="padding: 0px 20px 0px 60px; margin-top: -8px; width: 215px; height: 90px; float: left;"></div> 
+
+<div style="padding: 40px; padding-bottom: 50px; margin-top: -47px; width: 430px; float: left; background-color: #fff;">
+  <l>para revistas de vanguarda. Nas Américas, por sua vez, assumiram forte viés político-partidário, sendo o estilo preferencial utilizado por artistas latino-americanos para o enfrentamento de governos totalitários que se espalharam pelo continente nas décadas de 1960 e 1970. No Brasil, a influência do quadrinho underground pode ser encontrada na obra do mineiro Henfil e nas colaborações dos vários parti cipantes do semanário O Pasquim, do Rio de Janeiro, em que as audaciosas alfinetadas nos representantes ou nos (mal)feitos da ditadura militar eram retratados por traços econômicos e esteticamente desafiadores, numa composição que se afastava de cânones mais tradicionais e adentrava pelo universo da caricatura e da sátira (Fig. 2). Esse espectro de atuação das histórias em quadrinhos – mas não exclusivamente delas, uma vez que a revista O Pasquim também abria espaço para a charge, o cartum, a crônica –, também realizava a crítica de costumes, principalmente à classe média acomodada, tão necessária à sociedade da época. </l>
+  <p style="margin-top: 0px;">Com o reconhecimento do potencial artístico dos quadrinhos por parte dos intelectuais europeus e com a eclosão do movimento de quadrinhos underground estavam assentadas as bases para uma outra etapa na legitimação cultural das histórias em quadrinhos no mundo inteiro. Pode-se dizer que estava se agilizando o ritmo em que elas deixavam de ser vistas como uma linguagem exclusivamente direcionada para o público de menor idade e passavam a ser encaradas como manifestações voltadas a públicos diversos, com diferentes níveis de qualidade e representação do mundo. </p>
+  <p>De um primeiro momento, com as páginas dominicais e tiras diárias, quando foram vistos como forma de assimilação das camadas populares, quase que majoritariamente composta por imigrantes europeus ou asiáticos, </p>
+</div>
+
+<div style="padding-right: 60px; margin-top: -7px; width: 215px; float: right;">
+<l>à civilização norte americana, os quadrinhos passaram depois, com as <span style="letter-spacing: -.2px;">revistas de quadrinhos ou comic-books, a ser direcionados </span>prioritariamente ao público infanto-juvenil, sofrendo as agruras e perseguições de pais e educadores, num movimento de rejeição que se espalhou por praticamente os quatro cantos do mundo. </l>
+<p style="margin-top: 0px; letter-spacing: -.3px;">A verdadeira “ressaca cultural” que seguiu o período mais acirrado de perseguição ao meio – anos imediatamente posteriores à Segunda Guerra Mundial, época da chamada caça às bruxas e apogeu da Guerra Fria entre Estados Unidos e União Soviética, com a proposição do já mencionado Comics Code –, pode ser vista como um momento, ainda que forçado, de preparação para a transposição dos limites da linguagem, àquele tempo ainda aparentemente intransponíveis. Desta forma, à mesmice de uma produção padronizada, massificada e padronizadora seguiu-se um momento<font color="white"> de</font> </p>  
+</div></div>
+             
+             
+             
+           </li>
+                      <li>
+             
+             
+             
+             <div class="mat-capa" style="background: right #fff;">
+  <div style="padding: 0px 60px; margin-top: -20px; width: 440px; float: left;">
+  
+  <l> de ajuste, em que proposições diferenciadas de produção e composição estética eram expressas em diversas partes do mundo.</l>
+  <p style="margin-top: 0px;">Mesmo no âmbito da produção industrializada de quadrinhos era possível vislumbrar indicadores dessa busca por novos parâmetros criativos. Em meio a centenas de títulos e histórias que apenas repetiam um modelo de quadrinhos anódinos, agindo de forma quase subterrânea no ambiente dessa produção industrializada - ou mesmo sob o olhar complacente de seus editores –, alguns autores dos quadrinhos comerciais norte-americanos – aqueles publicados nas revistas de super-heróis, principalmente pelas duas grandes editoras da área, a Marvel e a DC Comics –, incluíam em suas histórias elementos narrativos ou gráficos que as faziam avançar além de produções contemporâneas, transformando-se em marcos para outros autores do gênero. O trabalho de Jim Steranko à frente do personagem Nick Fury, por exemplo, apresentava diferenças gritantes em relação aos da média dos criadores da época, com designs em que abundavam as fotocolagens e fotomontagens inspiradas em movimentos artísticos como a arte psicodélica e a Op Art.</p>
+  
+  <div class="mat-quote" style="text-align: center; width: 550px; margin-left: -100px; margin-bottom: -20px; ">"uma pequena parcela da produção continua a ser composta por obras que realmente colaboram para o avanço da linguagem dos quadrinhos e sua evolução artístican"</div> 
+  <p>Outro autor que se destacou na produção industrializada de quadrinhos foi  Steve Ditko, mundialmente conhecido como um dos <span style="letter-spacing: -.5px;">criadores do personagem Homem-Aranha, cujos primeiros 38 números foram por ele desenhados.</span></p>
+</div>
+
+<div style="padding-right: 50px; margin-top: -20px; width: 210px; float: left;">
+<l>Verdadeiro “mestre da composição, linguagem corporal e ritmo da narrativa” (WOLK, 2007, p. 156), ele se revelou especialmente inspirado no trabalho que realizou para a revista Strange Tales, protagonizada pelo mestre das artes místicas conhecido como Doutor Estranho fotografia, mereceu a 7a colocação...). </l>
+<p style="margin-top: 0px;">Quase que paralelamente, as histórias em quadrinhos passaram a ser também mencionadas como Arte Seqüencial, uma denominação pouco satisfatória, uma vez que, a rigor, poderia se referir não apenas às histórias em quadrinhos, mas também a outras artes com as mesmas características, como o cinema e a animação (razão pela qual, este autor prefere utilizar a expressão arte gráfica seqüencial para fazer referência às histórias em quadrinhos...). </p>
+<p style="letter-spacing: -.4px;">Isto, no entanto, talvez não tenha tanta importância, mas sim a proposição das histórias em quadrinhos <span style="letter-spacing: .2px;">como arte, objetivo que a expressão</span> </p>
+</div>
+
+<div style="padding-right: 50px; margin-top: -20px; width: 210px; float: right;">
+<l>parece atender satisfatoriamente. De qualquer forma, já no início da década de 1980 intensificou-se o uso desse termo por pesquisadores e artistas. Mais uma vez, foram liderados por Will Eisner, que o utilizou em um curso sobre quadrinhos que ministrou na School of Visual Arts da cidade de Nova Iorque e posteriormente como título de seu primeiro livro teórico na área (EISNER, 2001 [1985]). Tal como ele, outros artistas trataram de divulgar essa denominação em eventos e publicações da área. </l>
+<p style="margin-top: 0px;"> Tratou-se de mais um passo na busca da legitimação cultural da linguagem. Nesse sentido, Thierry Groensteen, analisando a realidade dos quadrinhos a partir da situação européia, também identifica dois momentos na história recente, bem semelhantes ao que se passou no ambiente norte-americano: 
+  <span style="letter-spacing: -.1px">em primeiro lugar, a reconquista do leitor adulto, ocorrida a partir de 1972, com o lançamento da publicação L´Echo de Savanes, considerada por ele como </span>
+</p>
+
+</div></div>
+             
+             
+             
+           </li>
+           
+           
+           <li>
+           
+           
+           <div class="mat-capa" style="background: right #fff;">
+  <div style="padding: 0px 0px 0px 60px; margin-top: -7px; width: 230px; float: left;">
+<l>a primeira revista “somente para adultos”; em segundo lugar, o crescimento da publicação de álbuns na França, ocorrida quase que em paralelo com o desaparecimento das revistas tradicionais de quadrinhos do país, Tintin, Pif, Pilote, Charlie, Metal Hurlant. acontecendo exatamente agora.” Analisando a produção atual e o nível de qualidade de imagens e roteiros encontrados em muitas produções quadrinísticas, não se pode deixar de concordar com esse autor. Estamos, sim, vivendo uma grande época para os quadrinhos. </l>
+  <p style="margin-top: 0px; letter-spacing: -.3px;">Por outro lado, não se pode deixar de reconhecer que a produção industrializada continua massiva e massificante: tolhida em limites mais amplos do que os de vinte ou trinta anos atrás, é certo, mas, ainda assim, com evidentes limitações. A oferta de quadrinhos como um todo,
+  considerada a produção industrial, continua disponibilizando, em proporções bastante exageradas – cerca de 80 ou 90 por cento, dependendo do ponto de vista -, daquilo<span style="letter-spacing: .2px;"> que poderia ser denominado como lixo,</span></p>
+</div>
+
+<div style="padding: 0px 20px 0px 20px; width: 230px; float: left; margin-top: -7px;">
+<l>ou seja, quadrinhos padronizados e presos a um modelo industrializado de produção, voltados para a reprodução das mesmas histórias a serem consumidas pelas mesmas massas de leitores invisíveis e não-identificados. Apenas uma pequena parcela da produção continua a ser composta por obras que realmente colaboram para o avanço da linguagem dos quadrinhos e sua evolução artística, enquanto todo o restante da produção busca perpetuar o interesse da sociedade em geral por esse meio de comunicação de massa. Mas nisso as histórias em quadrinhos não se diferenciam de todas as outras artes, pois fato semelhante pode ser encontrado no cinema, no teatro, na literatura, etc. Ambas as tipologias de produção – o lixo, por um lado, e a arte, por outro –, cumprem muito bem o seu papel. </l>
+<p style="margin-top: 0px;">A boa notícia é que as obras que fazem avançar a linguagem <span style="letter-spacing: -.7px;">quadrinística já não se situam mais somente no âmbito do quadrinho alternativo. Cada vez mais, é possível encontrar no contexto de quadrinhos</span></p>
+  
+</div>
+
+<div style="padding-right: 20px; margin-top: 191px; width: 220px; float: left;"><l>mainstream obras que, embora tratando de temáticas aparentemente padronizadas, re-elabo instituições culturais ainda permaneçam estupidamente fechadas para acesso e valorização das produções quadrinísticas, outras já se abrem e algumas até mesmo se escancaram para elas. Bibliotecas, que antes sequer cogitavam em armazenar quadrinhos, já as oferecem abertamente. Livrarias criam seções especiais para comercialização de graphic novels, álbuns e mini- séries. Escolas são tomadas por professores <span style="letter-spacing:-.2px;">e alunos ávidos pela utilização de histórias</span> </l></div>
+
+<div style="padding-right: 60px; margin-top: 191px; width: 215px; float: right;">
+<l> histórias em quadrinhos em sala de aula. São novos tempos.</l>
+  <p style="margin-top: 0px;">Exercícios de futurologia são sempre arriscados. Assim, seria provavelmente arriscado fazer qualquer tipo de prognóstico em relação ao futuro da arte gráfica seqüencial. Existe um caminho a ser percorrido, talvez ainda com algumas dificuldades. </p>
+<p>Autores e leitores, no entanto, parecem cada vez menos temerosos em relação a ele e o vêem como uma grande promessa. E talvez realmente o seja.<br> <div style="text-align: right; margin-top: 7px; font-size: 10px;">[1]</div></p>
+</p>
+</div>
+
+           
+           </li>
+           
+           
+           
+           
        </ul>
    </div>     
 </div>
